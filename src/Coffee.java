@@ -36,7 +36,5 @@ public  abstract class Coffee {
         return  this.content;
     }
 
-    public String getOrderDetails(){
-        return null;
-    }
+    public abstract String getOrderDetails();
 }

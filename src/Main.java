@@ -17,7 +17,12 @@ public class Main {
             System.out.println("Teşekkürler kahveniz hazırlanıyor.");
             TimeUnit.SECONDS.sleep(2);
             String detail;
-            Coffee coffee = new Coffee() {};
+            Coffee coffee = new Coffee() {
+                @Override
+                public String getOrderDetails() {
+                    return null;
+                }
+            };
             switch(s) {
                 case "1":
                     coffee = new Espresso();
